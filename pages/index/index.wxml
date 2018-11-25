@@ -1,0 +1,20 @@
+<view wx:for="{{videoList}}" class="item-container">  
+
+
+<!-- 视频 -->
+<view style='width:{{screenWidth}}px;height:210px;' class='back-img'>
+  <!-- aspecFit的作用：保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整地将图片显示出来。 -->
+  <!-- data-arrindex 是每个image的下标 -->
+  <image src="{{serverUrl}}{{item.coverPath}}" style='width:{{screenWidth}}px;height:210px;' mode="aspectFit" bindtap='showVideoInfo' data-arrindex='{{index}}'></image>
+</view>
+
+<!-- 用户 -->
+<view class="desc">
+  <view class="faceName">
+    <image class='myface' src="{{serverUrl}}{{item.faceImage}}"></image>
+    <view class="nickname">{{item.nickname}}</view>
+  </view>
+</view>
+
+
+</view>  

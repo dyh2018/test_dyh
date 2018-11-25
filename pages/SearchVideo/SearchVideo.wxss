@@ -1,0 +1,2 @@
+/* pages/SearchVideo/SearchVideo.wxss */
+@import "../../wxSearchView/wxSearchView.wxss";
